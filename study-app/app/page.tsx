@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import Counter from "@/components/Counter";
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
           color="#9C27B0"
         />
       </div>
+
+      <Counter />
     </main>
   );
 }
