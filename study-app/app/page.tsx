@@ -1,3 +1,5 @@
+import styles from "./Card.module.css";
+
 type CardProps = {
   title: string;
   description: string;
@@ -6,12 +8,9 @@ type CardProps = {
 
 function Card({ title, description, color }: CardProps) {
   return (
-    <div
-      className="rounded-2xl p-6 shadow-md text-white"
-      style={{ backgroundColor: color }}
-    >
-      <h2 className="text-xl font-bold mb-2">{title}</h2>
-      <p className="text-sm opacity-90">{description}</p>
+    <div className={styles.card} style={{ backgroundColor: color }}>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 }
