@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import Counter from "@/components/Counter";
+import ShapePlayground from "@/components/ShapePlayground";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       </div>
 
       <Counter />
+      <ShapePlayground />
     </main>
   );
 }
